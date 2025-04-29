@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="music-toggle">
+      <button id="music-toggle"><i class="fas fa-music"></i></button>
+      <span id="music-hint" class="music-hint">Tap to play sound</span>
+    </div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </nav>
+
+  <audio id="bg-music" src="nokia.mp3" loop preload="auto"></audio>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="particles"></div>
+    <div class="cursor-circle"></div>
+    <div class="hero-content">
+      <h1>Hi, I'm Andrew Iheanacho</h1>
+      <p>Software Developer specializing in Web & Distributed Systems</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <div class="about-content enhanced-about">
+      <!-- Intro on left -->
+      <div class="about-intro">
+        <img src="profilepic.png" alt="Profile Photo">
+        <p>I'm a Computer Science student at the University of Manitoba with a strong background in web and distributed systems. I love building scalable applications, optimizing performance, and creating intuitive user experiences.</p>
+      </div>
+      <!-- Experiences on right -->
+      <div id="experience" class="about-experience">
+        <h3>Experience</h3>
+        <div class="experience-container">
+          <ol class="experience-nav">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ol>
+          <div class="experience-list">
+            <div class="experience-item">
+              <h3>Junior Cloud Developer Co-op</h3>
+              <h4>Value Partners Investments <span>May 2025 – Present</span></h4>
+              <p>• Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems.<br>
+                 • Built a full-stack web app with Flask, React, and Docker to analyze GitHub collaboration metrics.<br>
+                 • Integrated CI/CD pipelines using GitHub Actions to automate testing and deployment.</p>
+            </div>
+            <div class="experience-item">
+              <h3>IT Support Analyst</h3>
+              <h4>IST – Technology Services, University of Manitoba <span>Sep 2024 – Apr 2025</span></h4>
+              <p>• Managed user accounts and permissions in Azure AD, Entra, and Exchange Admin.<br>
+                 • Troubleshot hardware and software issues for 500+ campus users.<br>
+                 • Documented support procedures and delivered training sessions on new campus technologies.</p>
+            </div>
+            <div class="experience-item">
+              <h3>Software Developer Lead (Volunteer)</h3>
+              <h4>UX Design Club, University of Manitoba <span>Jan 2024 – Aug 2024</span></h4>
+              <p>• Led a team of 5 developers to prototype a user research platform using JavaScript and Firebase.<br>
+                 • Conducted user interviews to gather feedback and iterated on UI designs.<br>
+                 • Presented project roadmap and progress at club meetings, driving adoption of best UX practices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.png" alt="Dashboard UI">
+        <div class="card-content">
+          <h3>Dashboard UI</h3>
+          <p>A sleek data dashboard showcasing key metrics and charts.</p>
+          <a href="#" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project1.png" alt="Task Manager App">
+        <div class="card-content">
+          <h3>Task Manager App</h3>
+          <p>A React-based task tracker with drag-and-drop and real-time sync.</p>
+          <a href="#" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project1.png" alt="Chat Application">
+        <div class="card-content">
+          <h3>Chat Application</h3>
+          <p>A real-time chat app built with WebSockets and Node.js.</p>
+          <a href="#" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project1.png" alt="E-commerce Store">
+        <div class="card-content">
+          <h3>E-commerce Store</h3>
+          <p>An online store with shopping cart, payments, and order history.</p>
+          <a href="#" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project1.png" alt="Weather App">
+        <div class="card-content">
+          <h3>Weather App</h3>
+          <p>A weather forecast app using OpenWeatherMap API and Tailwind CSS.</p>
+          <a href="#" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project1.png" alt="Weather App">
+        <div class="card-content">
+          <h3>Weather App</h3>
+          <p>A weather forecast app using OpenWeatherMap API and Tailwind CSS.</p>
+          <a href="#" target="_blank">View Repo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills container">
+    <h2>Skills</h2>
+    <div class="skills-categories">
+      <div class="skill-category">
+        <h3>Front-End</h3>
+        <ul>
+          <li><i class="fab fa-html5"></i> HTML5</li>
+          <li><i class="fab fa-css3-alt"></i> CSS3</li>
+          <li><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
+          <li><i class="fab fa-react"></i> React.js</li>
+          <li><i class="fab fa-tailwind"></i> Tailwind CSS</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Back-End</h3>
+        <ul>
+          <li><i class="fab fa-node-js"></i> Node.js</li>
+          <li><i class="fas fa-server"></i> Express.js</li>
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fas fa-rocket"></i> FastAPI</li>
+          <li><i class="fas fa-flask"></i> Flask</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Databases</h3>
+        <ul>
+          <li><i class="fas fa-database"></i> PostgreSQL</li>
+          <li><i class="fas fa-leaf"></i> MongoDB</li>
+          <li><i class="fas fa-table"></i> SQLite</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>DevOps & Tools</h3>
+        <ul>
+          <li><i class="fab fa-github"></i> Git & GitHub</li>
+          <li><i class="fab fa-docker"></i> Docker</li>
+          <li><i class="fas fa-cogs"></i> CI/CD (GitHub Actions)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact container">
+    <div class="contact-header">
+      <p class="contact-subtitle">Get In Touch</p>
+      <h2>Contact Me</h2>
+    </div>
+    <div class="contact-card">
+      <a href="mailto:andrew.iheanacho@umanitoba.ca" class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>andrew.iheanacho@umanitoba.ca</span>
+      </a>
+      <a href="https://linkedin.com/in/Andrew-Ih" target="_blank" rel="noopener" class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>
